@@ -1,5 +1,8 @@
 package com.pyramid.app.config;
 
+import javax.servlet.ServletContext;
+import javax.servlet.ServletException;
+
 import org.springframework.web.servlet.support.AbstractAnnotationConfigDispatcherServletInitializer;
 
 public class ApplicationInitializer extends AbstractAnnotationConfigDispatcherServletInitializer {
@@ -19,8 +22,9 @@ public class ApplicationInitializer extends AbstractAnnotationConfigDispatcherSe
 		return new String[] { "/" };
 	}
 
-	/*
-	 * @Override public void onStartup(ServletContext servletContext) throws
-	 * ServletException { super.onStartup(servletContext); }
-	 */
+	/*@Override
+	public void onStartup(ServletContext servletContext) throws ServletException {
+		super.onStartup(servletContext);
+	}*/
+
 }
